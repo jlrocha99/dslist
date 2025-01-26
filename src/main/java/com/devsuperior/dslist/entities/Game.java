@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 
 import java.util.Objects;
 //Configura minha classe Java para ser equivalente a uma tabela do meu banco relacional
+//teste github
 @Entity
 @Table(name = "tb_game")
 
