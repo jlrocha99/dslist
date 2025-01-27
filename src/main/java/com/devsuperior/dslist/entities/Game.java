@@ -4,8 +4,8 @@ package com.devsuperior.dslist.entities;
 import jakarta.persistence.*;
 
 import java.util.Objects;
+
 //Configura minha classe Java para ser equivalente a uma tabela do meu banco relacional
-//teste github
 @Entity
 @Table(name = "tb_game")
 
@@ -14,13 +14,18 @@ public class Game {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private long id;
   private String title;
+
   @Column(name = "game_year")
   private Integer year;
   private String genre;
   private String platforms;
   private Double score;
   private String imgUrl;
+
+  @Column(columnDefinition = "TEXT")
   private String shortDescription;
+
+  @Column(columnDefinition = "TEXT")
   private String longDescription;
 
   private Game() {
